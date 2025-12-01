@@ -108,3 +108,15 @@ Includes:
   "Noise": 0.05,
   "Silence": 0.03
 }
+```
+
+### Output
+<img width="959" height="401" alt="image" src="https://github.com/user-attachments/assets/a6ba1881-ff19-49dc-970f-a3b1abae9f52" />
+
+<img width="955" height="401" alt="image" src="https://github.com/user-attachments/assets/9446c826-dfd3-476b-b94b-342388be13cd" />
+
+<img width="956" height="398" alt="image" src="https://github.com/user-attachments/assets/6e67fe5f-247e-40f0-8080-8980bb01a602" />
+
+
+
+
