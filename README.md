@@ -1,252 +1,110 @@
-Women Safety App – AI-Powered Scream Detection
-Edge Impulse Integrated · Real-Time Distress Monitoring · Automatic SOS
+# 🛡️ Women Safety App – AI-Powered Scream Detection  
+### Edge Impulse Integrated · Real-Time Distress Monitoring · Automatic SOS
 
-Hey there! This project is an impactful blend of AI, mobile development, and safety innovation — built to protect women in real-world emergency situations.
-With Edge Impulse’s on-device ML, the app listens for distress cues like screams, “help”, and sudden loud noises, and triggers automatic SOS actions — even when the user cannot tap a button.
+Hey there! This project is an impactful blend of **AI**, **mobile development**, and **safety innovation** — built to protect women in real-world emergency situations. With **Edge Impulse’s on-device ML**, the app listens for distress cues like *screams*, *“help”*, and sudden loud noises, and triggers **automatic SOS actions** — even when the user cannot tap a button.
 
-🌟 What This Project Solves
+---
+
+## 🌟 What This Project Solves
 
 Women often face unsafe situations where they:
 
-❌ Cannot press an SOS button
-
-❌ Cannot unlock their phone
-
-❌ Cannot call for help
-
-❌ Panic or freeze
-
-❌ Are physically restricted
+❌ Cannot press an SOS button  
+❌ Cannot unlock their phone  
+❌ Cannot call for help  
+❌ Panic or freeze  
+❌ Are physically restricted  
 
 Traditional safety apps depend on manual triggers — which fail when they matter most.
 
-This app solves that with AI that listens, detects, and helps instantly — without user input.
+---
 
-🚨 Problem Statement
+## 🚨 Problem Statement
 
-Women require a safety system that:
+There is a need for a safety system that:
 
-⚡ Works automatically
+- ⚡ Works automatically  
+- 🎧 Detects danger in real time  
+- 🆘 Sends alerts without user input  
+- 📡 Works even offline  
+- 🛟 Helps women get immediate support  
 
-🎧 Detects danger in real time
+This project solves that using **AI-based scream detection**.
 
-🆘 Sends alerts without user interaction
+---
 
-📡 Works even offline
+## 💡 Proposed Solution
 
-🛟 Provides immediate help
+A mobile app powered by **Edge Impulse’s audio classification model** that detects:
 
-This app brings an AI-driven scream detection system built to save lives.
+- 🔊 Scream-like audio  
+- 🗣️ Distress keywords (“Help”, “Stop”)  
+- 🔉 Sudden loud noises  
+- 🎙️ Unusual audio patterns  
 
-💡 Proposed Solution
+When danger is detected → **Automatic SOS**, **GPS sharing**, **audio recording**, and **contact alerts**.
 
-A mobile app powered by Edge Impulse’s Audio Classification Model that continuously monitors the environment and detects:
+---
 
-🔊 Scream-like sounds
+## 🔥 Key Features
 
-🙁 Crying / shouting
+- 🤖 AI-powered scream detection (≥75% confidence)  
+- 🧠 Real-time MFCC + CNN audio classification  
+- 🚨 Automatic SOS activation  
+- 📍 Live GPS sharing  
+- 📡 Works offline (on-device inference)  
+- 📱 Background monitoring  
+- 🎤 Auto audio evidence recording  
+- 📳 Fall/struggle detection via accelerometer  
 
-🔉 Distress keywords (“Help”, “Stop”)
+---
 
-📢 Sudden loud noises
+## 🛠️ Tech Stack
 
-🎙️ Unusual audio patterns
+### 📱 Mobile App
+- Flutter / React Native  
+- Google Maps API  
+- Firebase / Twilio / WhatsApp API  
 
-When a threat is detected → Automatic SOS, live location sharing, audio recording, and contact notifications.
+### 🤖 AI Model
+- Edge Impulse Audio Classification  
+- MFCC Feature Extraction  
+- TensorFlow Lite Deployment  
 
-🔥 Key Highlights
+### 🔌 Sensors & Integrations
+- Microphone  
+- GPS  
+- Accelerometer  
 
-🤖 AI-powered scream detection (≥75% confidence)
+---
 
-🧠 Real-time audio classification (MFCC + CNN)
+## 🔗 Edge Impulse Integration
 
-🚨 Automatic SOS trigger
+### 1️⃣ Data Collection
+Includes:
+- Scream samples  
+- Crying / shouting  
+- Background noise  
+- Talking  
+- Silence  
+- Keywords: “Help”, “Stop”  
 
-📍 Live GPS location sharing
+### 2️⃣ Model Training
+- MFCC extraction  
+- CNN classifier  
+- Labels: Scream, Noise, Talking, Silence  
+- Accuracy: **82–90%**  
 
-📡 Works offline (on-device ML)
+### 3️⃣ Deployment
+- Exported as `.tflite`  
+- Edge Impulse C++ SDK  
 
-📱 Background monitoring
+### 4️⃣ Mobile Model Output Example
 
-📸 Auto evidence recording (10–30 sec)
-
-📳 Optional accelerometer detection (fall/struggle)
-
-🛠️ Tech Stack
-📱 Mobile App
-
-Flutter / React Native
-
-Firebase / Twilio / WhatsApp API
-
-Google Maps API
-
-🤖 AI Model
-
-Edge Impulse (Audio Classification)
-
-MFCC feature extraction
-
-TensorFlow Lite deployment
-
-📡 Sensors Used
-
-Microphone
-
-GPS
-
-Accelerometer
-
-On-device inference engine
-
-🎯 Core Features
-🔊 AI Scream & Distress Detection
-
-Detects scream, shouting, “Help!”
-
-Multi-level distress scoring → High / Medium / Low
-
-Runs silently in background
-
-🚨 Automatic SOS System
-
-When scream ≥ 0.75 confidence:
-
-Sends SOS alert
-
-Shares real-time location
-
-Records audio evidence
-
-Notifies trusted contacts / helplines
-
-🛰 GPS Emergency Tracking
-
-Live location updates
-
-Continuous tracking in danger mode
-
-📱 Safety Tools
-
-One-tap SOS
-
-Fake call feature
-
-High-volume alarm
-
-Instant evidence recording
-
-🔐 Privacy First
-
-No raw audio stored
-
-On-device ML
-
-End-to-end encrypted emergency data
-
-🔗 Edge Impulse Integration
-① Data Collection
-
-Dataset includes:
-
-Scream samples
-
-Crying / shouting
-
-Background noise
-
-Talking
-
-Silence
-
-Keywords: “Help”, “Stop”, etc.
-
-Uploaded to Edge Impulse Studio.
-
-② Model Training
-
-MFCC feature extraction
-
-CNN-based classifier
-
-Labels: Scream, Noise, Talking, Silence
-
-Accuracy: 82%–90% based on dataset
-
-③ Model Deployment
-
-Export formats:
-
-.tflite (mobile)
-
-C++ Edge Impulse SDK
-
-④ Mobile Integration
-
-Model output example:
-
+```json
 {
   "Scream": 0.82,
   "Talking": 0.10,
   "Noise": 0.05,
   "Silence": 0.03
 }
-
-⑤ Decision Flow
-Audio Input
-     ↓
-Edge Impulse Model
-     ↓
-Is Scream ≥ 0.75?
-     → Yes → Trigger SOS
-     → No → Is Scream ≥ 0.50?
-                 → Yes → Notify Contacts
-                 → No → Keep Monitoring
-
-📦 AI Response Example
-{
-  "detection": true,
-  "distress_level": "high",
-  "scream_confidence": 0.82,
-  "recommended_action": "Trigger SOS and send location immediately.",
-  "location": "13.0827, 80.2707",
-  "timestamp": "2025-02-19T18:22:15Z"
-}
-
-🚀 Getting Started
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/women-safety-ai-scream-detection.git
-cd women-safety-ai-scream-detection
-
-2️⃣ Add Your Edge Impulse Model
-
-Place your .tflite file inside:
-
-/assets/models/
-
-3️⃣ Install Dependencies (Flutter)
-flutter pub get
-
-4️⃣ Run the App
-flutter run
-
-📘 How to Use
-
-Just open the app → allow microphone access → keep it running.
-
-The AI listens silently in the background.
-If danger is detected → SOS triggers automatically.
-
-🔮 Future Improvements
-
-🗺️ Geofencing unsafe zones
-
-⌚ Wearable + smartwatch integration
-
-❤️ Heart-rate distress detection
-
-🧠 Multilingual keyword detection
-
-🤝 Community safety network
-
-📡 Cloud-based incident analytics
